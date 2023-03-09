@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Chuyển đổi nhiệt độ</h3>
+<h4>Giá trị của oF=</h4>
+<p id="F"></p>
+<button onclick="doi()">Chuyển đổi oC sang oF=</button>
+<script>
+    function doi() {
+        let C = +prompt("mời bạn nhập nhiệt độ C");
+        document.getElementById("F").innerHTML = (9 * C + 160) / 5;
+    }
+</script>
+</body>
+</html>

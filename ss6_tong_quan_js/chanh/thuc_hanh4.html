@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google.calc.com</title>
+</head>
+<body>
+<input id="e">
+<input id="f">
+<input id="g">
+<button onclick="tinh()">Cộng</button>
+<h3 id="kq">kết quả</h3>
+<script>
+    function tinh() {
+       let n1=+document.getElementById("e").value;
+       let n2=+document.getElementById("f").value;
+       let n3=+document.getElementById("g").value;
+        document.getElementById("kq").innerHTML=(n1+n2+n3);
+    }
+</script>
+</body>
+</html>

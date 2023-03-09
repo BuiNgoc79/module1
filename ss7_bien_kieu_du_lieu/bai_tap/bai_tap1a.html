@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tính điểm trung bình cộng 3 môn</h3>
+<h4>Điểm trung bình</h4>
+<input id="ly" placeholder="nhập toán">
+<input id="hoa" placeholder="nhập lý">
+<input id="sinh" placeholder="nhập hoá">
+<button onClick="tinh()">tính toán</button>
+<p id="ketqua">kết quả</p>
+<script>
+    function tinh() {
+        let ly = +document.getElementById("ly").value;
+        let hoa = +document.getElementById("hoa").value;
+        let sinh = +document.getElementById("sinh").value;
+        let tong = ly+hoa+sinh;
+        let trungBinh = tong/3;
+        document.getElementById("ketqua").innerText= "tổng điểm 3 môn là: " + tong +  " và điểm trung bình là : " + trungBinh;
+    }
+</script>
+</body>
+</html>

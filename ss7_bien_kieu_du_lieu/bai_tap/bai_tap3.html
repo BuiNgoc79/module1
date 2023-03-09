@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<input id="nhap1">
+<input id="nhap2">
+<option value=""></option>
+<button onclick=add()>additionon(+)</button>
+<button onclick=sub()>Subtraction(-)</button>
+<button onclick="bul()">bultiplication(*)</button>
+<button onclick="div()">Division(/)</button>
+<input id="resuit" disabled style="...">
+<script>
+    function add() {
+        let a = +document.getElementById("nhap1").value;
+        let b = +document.getElementById("nhap2").value;
+        let cong = a + b;
+        document.getElementById("resuit").value = cong;
+    }
+
+    function sub() {
+        let a = +document.getElementById("nhap1").value;
+        let b = +document.getElementById("nhap2").value;
+        let tru = a - b;
+        document.getElementById("resuit").value = tru;
+    }
+
+    function bul() {
+        let a = +document.getElementById("nhap1").value;
+        let b = +document.getElementById("nhap2").value;
+        let nhan = a * b;
+        document.getElementById("resuit").value = nhan;
+    }
+
+    function div() {
+        let a = +document.getElementById("nhap1").value;
+        let b = +document.getElementById("nhap2").value;
+        let chia = a / b;
+        document.getElementById("resuit").value = chia;
+    }
+</script>
+</body>
+</html>

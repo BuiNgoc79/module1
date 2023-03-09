@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tính diện tích hình tròn</h2>
+<h4>S=</h4>
+<p id="S"></p>
+<button onclick="tinh()">Tính DT hình tròn</button>
+
+<script>
+    function tinh() {
+        let radius = +prompt("nhập bán kính hình tròn");
+        const PI = 3.14;
+        document.getElementById("S").innerHTML = radius * radius * PI;
+    }
+</script>
+</body>
+</html>

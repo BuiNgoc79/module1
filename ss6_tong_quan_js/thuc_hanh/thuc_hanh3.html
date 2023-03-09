@@ -1,0 +1,25 @@
+<!DOCTYPE Html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<input id="a">
+<input id="b">
+<input id="c">
+<button onclick="tinh()">cộng</button>
+<h2 id="kết quả">kết quả</h2>
+
+<script>
+    function tinh() {
+        let a1= +document.getElementById("a").value;
+        let b1= +document.getElementById("b").value;
+        let c1= +document.getElementById("c").value;
+
+    document.getElementById("kết quả").innerHTML=a1 + b1 + c1;
+        }
+</script>
+
+</body>

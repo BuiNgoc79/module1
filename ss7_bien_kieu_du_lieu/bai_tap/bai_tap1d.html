@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tính chu vi hình tròn</h2>
+<h4>C=</h4>
+<p id="c"></p>
+<button onclick="tinhc()" >Tính CV hình tròn</button>
+<script>
+    function tinhc() {
+        let D = +prompt("nhập đường kính hình tròn")
+        const PI =3.14;
+        document.getElementById("c").innerHTML = D * PI;
+    }
+</script>
+</body>
+</html>
