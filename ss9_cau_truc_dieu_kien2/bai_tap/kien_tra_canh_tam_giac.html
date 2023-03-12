@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIỂM TRA CẠNH TAM GIÁC</title>
+</head>
+<body>
+<script>
+        let A = +prompt('Nhập độ dài cạnh a:');
+        let B = +prompt('Nhập độ dài cạnh b:');
+        let C = +prompt('Nhập độ dài cạnh c:');
+        if (A > 0 && B > 0 && C > 0) {
+            if ((A + B) > C) {
+                if ((A + C) > B) {
+                    if ((B + C) > A) {
+                        alert("A,B,C là 3 cạnh của một tam giác");
+                    }
+                }
+            }
+        } else {
+            alert("Đây không phải là 3 cạnh của một tam giác");
+        }
+</script>
+</body>
+</html>

@@ -8,17 +8,19 @@
     <style id="custom cursor" type="text/css"></style>
 </head>
 <body>
-<h1>Tính chỉ số cân nặng</h1>
-<label for="can_nang"> Nhập cân nặng:  (kg)</label>
-<input type="text" name="" id="can_nang">
-<br>
-<br>
-<label for="chieu_cao"> Nhập chiều cao:  (m)</label>
-<input type="text" name="" id="chieu_cao">
-<br>
-<br>
-<button onclick="kiem_tra()">Kiểm tra</button>
-<p id="result"></p>
-<script src="chi_so_can_nang.js"></script>
+<script>
+let weight = +prompt('Nhập cân nặng:');
+let height = +prompt('Nhập chiều cao');
+let BMI = weight/(height *height);
+if (BMI < 18.5){
+alert('Under Weight');
+}else if (BMI < 25.0){
+alert('Normal');
+}else if (BMI <30){
+alert('Over Weight');
+}else {
+alert('Obase')
+}
+</script>
 </body>
 </html>
