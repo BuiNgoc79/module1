@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<body>
+<h3>Tính giá điện</h3>
+Nhập P(Công suất tiêu thụ): <input type="text" id="p">
+Nhập t(Thời gian sử dụng):<input type="text" id="t">
+<button onclick="tinh()">Kết quả</button>
+<p id="print"></p>
+<script>
+    function tinh() {
+        let p = document.getElementById("p").value;
+        let t = document.getElementById("t").value;
+        let a = p * t
+        document.getElementById("print").innerText = "Tiền điện tháng này của bạn là " + a + "VND"
+    }
+</script>
+</body>
