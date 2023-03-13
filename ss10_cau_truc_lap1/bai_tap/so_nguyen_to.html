@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=+prompt("")
+
+    for {
+        let count = 0;
+        if (number>=2){
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    count++;
+                }
+            }
+            if (count == 0) {
+                document.write(number + " la snt")
+            }
+        }
+
+    }
+    // let c = prompt("mời bạn nhập nhiệt độ");
+    // while (c < 20 || c > 100) {
+    //     if (c<20) {
+    //         alert("tăng nhiệt độ");
+    //
+    //     }else{
+    //         alert("giảm nhiệt độ")
+    //     }
+    //     c = prompt("nhập lại")
+    // }
+
+</script>
+</body>
+</html>
