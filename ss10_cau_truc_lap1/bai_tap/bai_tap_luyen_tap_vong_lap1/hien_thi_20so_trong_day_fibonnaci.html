@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>số nguyên tố</title>
 </head>
 <body>
-<script>
-
-
-</script>
-
+<h3> In ra 20 số nguyên tố đầu tiên trong dãy Fibonacci </h3>
 </body>
+<script>
+    let stn = 0;
+    let st2 = 1;
+    let st3;
+    st3 = stn + st2;
+    for (let i = 0; i < 20; i++) {
+        console.log(stn);
+        st3 = stn + st2;
+        stn = st2;
+        st2 = st3;
+    }
+</script>
 </html>
