@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let stn = 0;
+    let st2 = 1;
+    let st3 = 0;
+    let total = 0;
+    for (let i = 0; i < 20; st3=stn+st2) {
+        console.log(st3);
+        total += st3;
+        stn = st2;
+        st2 = st3;
+        i++;
+    }
+    console.log("tổng 20 số đầu tiên trong dãy fibinacci là:" +total);
+
+</script>
+
+</body>
+</html>
