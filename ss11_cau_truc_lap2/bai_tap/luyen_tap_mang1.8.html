@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array_1_08</title>
+</head>
+<body>
+<script>
+    let array = [];
+    for (i = 1; i <= 10; i++) {
+        let phanTu = prompt("nhập phần tử thứ " + i);
+        array.push(phanTu);
+    }
+    let size = array.length;
+    for (i = 0; i < size; i++) {
+        for (j = 0; j < (size - i - 1); j++) {
+            if (array[j]*1 < array[j + 1]*1) {
+                let nguoiThayThe = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = nguoiThayThe;
+            }
+        }
+    }
+    let text = "";
+    for (i = 0; i < size; i++) {
+        text += array[i]+"  ";
+    }
+    alert(text);
+
+
+
+</script>
+</body>
+</html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--<script>-->
+<!--    let numbers = [3, 17, 23, 9, 150, 237, 4, 46, 12, 7];-->
+<!--    numbers.sort(function (a, b) {-->
+<!--        return b - a;-->
+<!--    });-->
+<!--    console.log(numbers);-->
+<!--</script>-->
+<!--</html>-->
