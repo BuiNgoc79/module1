@@ -5,23 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-<button value="game" onclick="game()">Let's Go</button>
 </body>
 <script>
-    function game() {
-        let doanSo = prompt("Số bạn muốn đoán trong khoảng là : ")*1;
-        let soDung = Math.random()*doanSo;
-        console.log(soDung);
+        let doanSo = +prompt("Số bạn đoán trong khoảng là : ");
+        let dung = Math.random()*doanSo;
+        console.log(dung);
         for (count = 0; count < 3; count++){
-            let soDoan = prompt("Sô bạn đoán là:")*1;
-            if (soDoan > soDung){
+            let doan = +prompt("Sô bạn đoán là:");
+            if (doan > dung){
                 alert("Sô bạn nhập lớn hơn số đúng");
-            }else if (soDoan < soDung){
-                alert("Số bạn nhâp bé hơn số đúng");
+            }else if (doan < dung){
+                alert("Số bạn nhâp nhỏ hơn số đúng");
             }else {
-                alert("Số bạn nhập đã đúng, bạn thật đỉnh");
+                alert("Số bạn nhập đúng");
             }
-        } alert("Bạn đã hểt số lần thử!")
-    }
+        } alert("Bạn đã hểt số lần thử!");
 </script>
 </html>
