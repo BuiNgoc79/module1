@@ -5,18 +5,10 @@
     <title>Title</title>
 </head>
 <body>
+<button onclick="onLamp()">On</button>
+<button onclick="offLamp()">Off</button>
+<p id="lamp"></p>
 <script>
-    class SwitchButton {
-        constructor(status, lamp) {
-            this.status = status;
-            this.lamp = lamp;
-        }
-
-        getStatus() {
-            return this.status;
-        }
-    }
-
     class ElectricLamp {
         constructor(status) {
             this.status = status;
@@ -27,22 +19,49 @@
         }
 
         turnOn() {
-            this.status = true;
             return this.status = true;
         }
-        turnOff(){
-            this.status=false;
-            return this.status=false;
+
+        turnOff() {
+            return this.status = false;
+        }
+    }
+
+    class SwitchButton {
+        constructor(status, lamp) {
+            this.status = status;
+            this.lamp = lamp;
         }
 
-    }
-    let electricLamp= new ElectricLamp(false);
-    let switchButton= new SwitchButton(electricLamp, false);
-    console.log(electricLamp.getStatus());
-    console.log(switchButton.switchOn());
-    console.log(electricLamp.getStatus());
-    console.log(switchButton.switchOff());
+        switchOn() {
+            this.lamp.turnOn();
+            this.status = true;
+            return true;
+        }
 
+        switchOff() {
+            this.lamp.turnOff();
+            this.status = false;
+            return false;
+        }
+
+        connectToLamp(newLamp) {
+            this.lamp = newLamp;
+        }
+    }
+
+    let electricLamp = new ElectricLamp(false);
+    let switchButton = new SwitchButton(false, electricLamp);
+
+    function onLamp() {
+        switchButton.switchOn();
+        document.getElementById("lamp").innerHTML = (switchButton.status + " :bật đèn");
+    }
+
+    function offLamp() {
+        switchButton.switchOff();
+        document.getElementById("lamp").innerHTML = (switchButton.status + " :tắt đèn ");
+    }
 
 </script>
 
