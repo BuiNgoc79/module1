@@ -9,8 +9,7 @@
 </canvas>
 <script>
     class Rectangle {
-        constructor(length, width)
-        {
+        constructor(length, width) {
             this.length = length;
             this.width = width;
         }
@@ -30,8 +29,8 @@
     alert("Diện tích hình chữ nhật là: " + hinhChuNhat.acreage() + 'm2');
     alert("Chu vi hình chữ nhật là: " + hinhChuNhat.perimeter() + 'm');
 
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
+    let c = document.getElementById("myCanvas");
+    let ctx = c.getContext("2d");
     ctx.beginPath();
     ctx.fillRect(20, 20, 150, 100);
     ctx.fillStyle = '#fa4b2a';

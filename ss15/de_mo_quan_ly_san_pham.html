@@ -11,13 +11,11 @@
 <script>
   let productArray = ["Nokia", "Sam sung", "Iphone", "LG"];
   displayProducts();
-​
     function deleteByIndex(index) {
       let deleteConf = confirm("Bạn có muốn xoá sản phẩm : "+ productArray[index]+ "?????");
       if (deleteConf){
         productArray.splice(index,1);
       }
-​
       displayProducts();
     }
   function addNewProduct() {
@@ -26,7 +24,6 @@
     document.getElementById("productName").value ="";
     displayProducts();
   }
-​
     function displayProducts() {
       let tableString = '<table border="1">\n' +
               '    <tr>\n' +
@@ -46,8 +43,6 @@
       tableString += '</table>';
       document.getElementById("display").innerHTML = tableString;
     }
-​
-  ​
 </script>
 </body>
 </html>

@@ -1,92 +1,18 @@
-Các thẻ trong HTML
-Mình sẽ liệt kê một số thẻ trong HTML để các bạn dễ hình dung hơn
-Thẻ	Tên thẻ	Ví dụ	Chức năng
-<!--...-->	Thẻ comment	<!– đây là dòng comment–>	Dùng để mô tả và không được hiển thị.
-<a>	Thẻ liên kết	<a href=”url”>text</a>	Dùng để liên kết một văn bản đến một url.
-<abbr>	Thẻ ghi chú	<abbr title=”ghi chú”>text</abbr>	Dùng để hiển thị ghi chú cho một văn bản.
-<address>	Thẻ địa chỉ	<address> Địa chỉ </address>	Dùng để chứa thông tin địa chỉ.
-<article>	Thẻ xác định nội dung	<article>Nội dung </article>	Dùng để xác định khối nội dung độc lập.
-<audio>	Thẻ âm thanh	<audio controls>
-<source src=”audio.mp3″ type=”audio/mpeg”>
-</audio	Thẻ chứa âm thanh cho phép trên trình duyệt.
-<b>	Thẻ in đậm	<p>text<b>	in đậm văn bản.
-                        <base>	Thẻ URL mặc định	<base href=”url_base”>	khi dùng liên kết tương đối / nó sẽ thay thế thành liên kết base.
-                        <bdi>	Cô lập phần tử	<li>text <bdi>إيان</bdi> 90$</li>	Cô lặp một phần tử để giữ nguyên cấu trúc định sẵn.
-                            <bdo>	Định hướng đoạn	<bdo dir=”rtl”>đây là đoạn chữ.</bdo>	Có hai hướng là left (ltl) right (rtl), thẻ sẽ định hướng đi của đoạn chữ.
-                        <blockquote>	Thẻ trích đoạn	<blockquote>text</blockquote>	thường dùng để hiển thị một đoạn trích.
-                            <br>	Thẻ ngắn dòng	ABC <br> XYZ	Thẻ thực hiện ngắn dòng trên một đoạn và không có thẻ đóng.
-                            <button>	Nút bấm	<button type=”button”>Nút bấm</button>	Dùng để hiển thị một nút bấm.
-                                <canvas>	Thẻ đồ họa	<canvas id=”design”></canvas>	Thẻ là vùng chứa đồ họa và thường dùng kết hợp JavaScript.
-                                    <caption>	Mô tả	<caption>mô tả</caption>	Thường dùng lồng vào đối tượng nào đó để hiển thị mô tả.
-                                        <cite>	Thẻ tác phẩm	<cite>sống chung với mẹ chồng</cite>	dùng để đánh dấu đây là tên của một tác phẩm.
-                                            <code>	Thẻ chứa mã code	<code>mã code<code>	Thẻ cho phép chứa các đoạn mã mà không làm ảnh hưởng đến hiển thị.
-                                                <del>	Thẻ gạch giữa chữ	<del>text</del>	Thể hiện một tài liệu được gạch bỏ.
-                                                    <div>	Thẻ định nghĩa một vùng chứa	<div>Nội dung<div>	Được dùng phổ biến để định dạng bố cục.
-                                                        <embed>	Thẻ nhúng	<embed src=”helloworld.swf”>	Dùng để nhúng nội dung bên ngoài trang web.
-                                                        <figure>	Thẻ đánh dấu hình ảnh	<figure>
-                                                            <img src=”img.jpg”>
-                                                            <figcaption>Mô tả.</figcaption>
-                                                        </figure>	Thẻ chứa nội dung về hình ảnh bao gồm thẻ figcaption để chứa mô tả cho hình ảnh.
-                                                            <footer>	Thẻ đánh dấu phần cuối website	 <footer>Nội dung</footer>	Thẻ thường chỉ định những phần ở cuối website.
-                                                                <form>	Thẻ chứa các control nhập liệu	 <form action=”/action_page.php” method=”get”>
-                                                                    Các thẻ input
-                                                                </form>	 thẻ <form> được sử dụng chủ yếu để tạo ra vùng nhập liệu và xác định hành động xử lý.
-                                                                    <h1> - <h6>	Các thẻ heading	 <h1>Text</h1>
-                                                                        ….
-                                                                        <h6>Text</h6>	 Là các thẻ tiêu đề định dạng từ số 1 đến số 6.
-                                                                        <header>	Thẻ đánh dấu phần đầu website	 <header/>Nội dung<header>	Thẻ thường chỉ định những phần ở đầu website.
-                                                                            <hr>	 Thẻ xác định thay đổi chủ đề	 Chủ đề 1 <hr> chủ đề 2	Thẻ tạo ra đường ngăn cách phân tách các nội dung khác nhau.
-                                                                            <i>	 Thẻ in nghiên	 <i> Nội dung </i>	 In nghiên các đoạn text
-                                                                                <iframe>	Thẻ nội tuyến	<iframe src=”https://tuandc.com”></iframe>	Nhúng một tài liệu HTML từ URL khác vào HTML hiện tại
-                                                                                    <img>	Thẻ hình ảnh	<img src=”img.gif”>	Thẻ hiển thị hình ảnh trên HTML
-                                                                                    <input>	Thẻ nhập liệu	<input type=”text” name=”name”>	Thẻ dùng để người dùng nhập liệu thường nằm trong thẻ <form>
-                                                                                        <ins>	Thẻ xác định đoạn được chèn	<ins>Nội dung </ins>	Thẻ được dùng để xác định một đoạn được chèn vào và hiển thị một dấu gạch chân.
-                                                                                            <label>	Thẻ nhãn	<label>nhãn</label>	thường là nhãn cho thẻ input
-                                                                                                <li>	Thẻ mục trong danh sách	<li>Item</li>	Thẻ được nằm trong thẻ <ul> hoặc <ol> thể hiện các mục của danh sách.
-                                                                                                    <link>	Thẻ liên kết tài nguyên ngoài	<link rel=”stylesheet” type=”text/css” href=”style.css”>	Thẻ dùng để gọi các tệp tài nguyên như CSS, JS,…
-                                                                                                    <main>	Thẻ xác định nội dung chính	<main>Nội dung </main>	Thẻ dùng để xác định những nội dung chính của một trang.
-                                                                                                        <mark>	Thẻ đánh dấu	<mark>nội dung</mark>	Thẻ đánh dấu một nội dung trong đoạn bằng cách tô nền nội dung đó.
-                                                                                                            <meta>	Thẻ thông tin	<meta name=”description” content=”nội dung”>	Thẻ cung cấp thông tin cơ bản về trang web.
-                                                                                                            <nav>	Thẻ điều hướng	<nav> các liên kết </nav>	Thường sử dụng cho menu.
-                                                                                                                <noscript>	Thực thi khi người dùng tắt script	<noscript>Trình duyệt không hỗ trợ script</noscript>	Dùng để hiển thị thông báo hoặc thực thi thay thế khi trình duyệt của người dùng k hỗ trợ javascript hoặc bị tắt.
-                                                                                                                    <ol> hoặc <ul>	Thẻ hiển thị danh sách	<ol>
-                                                                                                                        <li>nội dung</li>
-                                                                                                                        <li>nội dung</li>
-                                                                                                                    </ol>thẻ <ul> tương tự	Thẻ cho phép hiển thị một danh sách được kết hợp với thẻ li. thẻ <ol> hiển thị danh sách được đánh số trong khi thẻ <ul> thì không có đánh số.
-                                                                                                                        <option>	Thẻ tùy chọn	 <option value=”giá trị”>Tên giá trị</option>	Là thẻ tùy chọn được nằm trong thẻ <select>
-                                                                                                                            <p>	Thẻ đoạn văn bản	<p>Nội dung</p>	Hiển thị một đoạn văn bản
-                                                                                                                            <pre>	Thẻ định dạng trước	<pre>Nội dung</pre>	Thẻ giúp hiển thị nội nội với văn bản được dịnh dạng trước giữ nguyên.
-<script>	Thẻ chứa mã script	<script>Nội dung</script>	Thẻ cho phép nhúng trực tiếp các đoạn script trong html
-<section>	Thẻ thành phần	<section> Nội dung </section>	Thẻ đánh đấu một phần của tài liệu HTML.
-<select>	Thẻ lựa chọn	<select>
-Thẻ option
-</select>	Thẻ chứa các thẻ option hiển thị một list lựa chọn.
-<span>	Thẻ ngắt	Đây là <span style=”color:red”>Tuandc</span>	Thẻ dùng để ngắn và tạo ra một định dạng riêng cho đoạn ngắt.
-<strong>	Thẻ đánh dấu quan trọng	<strong>Nội dung</strong>	Thẻ đánh dấu đoạn văn bản quan trọng bằng hiển thị in đậm.
-<style>	Thẻ định dạng	<style> định dạng css </style>	Thẻ cho phép định dạng css được định dạng trực tiếp trên tệp HTML
-<sub> và <sup>	Thẻ phụ	<sub>1/2</sub>
-<sup>2</sup>	Định dạng một chữ viết thụt lên (sup) hoặc thụt xuống (sub)
-<table>	Thẻ bảng	<table>Thành phần bảng</table>	Thẻ chứa các thẻ định dạng bảng
-<tr>	Thẻ hàng trong bảng	<tr> các thẻ cột </tr>	Thẻ chứa các thẻ định dạng cột
-<th>	Thẻ cột trong bảng	<th> Nội dung cột </th>	Thẻ chứa các nội dung cho cột
-<textarea> 	Thẻ nhập đoạn văn bản	<textarea rows=”4″ cols=”50″>Nội dung</textarea>	Thẻ dùng để nhập liệu một đoạn nội dung dài
-<time>	Thẻ xác định thời gian	<time>10:00</time>	Thẻ dùng để xác định một đoạn văn bản là thời gian trong HTML
-<title>	Thẻ tiêu đề trang	<title>Tiêu đề</title>	Thẻ hiển thị tiêu đề của trang và được đặt ở thẻ <head>
-Các thuộc tính trong thẻ HTML
-Thuộc tính ngôn ngữ
-<html lang="vi-VI">: thuộc tính của thẻ HTML
-Thuộc tính tiêu đề
-<p title="Đây là nội dung">: thuộc tính có thể dùng cho nhiều thẻ như p, a, img,…
-Thuộc tính href
-<a href="https://tuandc.com">: thuộc tính chỉ định liên kết cho thẻ a
-Thuộc tính kích thước
-<img src=img.jpg" width="104" height="142">: Thuộc tính quy định kích thước chiều rộng (width) và chiều cao (height) cho hình ảnh.
-Thuộc tính alt
-<img src="img.jpg" alt="tuandc.com">: Thuộc tính alt sẽ cho biết mô tả chính xác về hình ảnh đó, hiển thị khi hình ảnh không được tìm thấy.
-Thuộc tính id
-<div id="id_text">: thuộc tính ID chỉ định ID cho thẻ, dùng để xác định thẻ cho lập trình, hoặc cho định dạng
-Thuộc tính class
-<div class="design">: thuộc tính class chỉ định thẻ thuộc nhóm, dùng để xác định thẻ cho lập trình, hoặc cho định dạng.
-Thuộc tính style
-<div style="color:red;">: thuộc tính style dùng để chèn trực tiếp định dang theo kiểu inline cho thẻ
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<script>
+    for (let i = 0,j=10; i <= 10; i++,j--) {
+        let sum = i + j;
+        document.write(i +"+"+j+"="+sum+"<br>");
 
+
+    }
+</script>
+
+</body>
+</html>
