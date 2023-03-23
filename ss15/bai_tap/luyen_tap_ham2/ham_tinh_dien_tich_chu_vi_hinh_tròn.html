@@ -10,6 +10,7 @@
 <script>
     let PI = 3.14;
     let radius = +prompt("nhập bán kính hình tròn");
+
     function tinhDienTich() {
         let acreage;
 
@@ -20,17 +21,20 @@
             alert("mời bạn nhập lại bán kính");
         }
     }
+
     tinhDienTich()
-    function tinhChuVi(){
+
+    function tinhChuVi() {
         let perimeter;
-        if (radius>0) {
+        if (radius > 0) {
             perimeter = radius * 2 * PI;
             alert("chu vi hình tròn là :" + perimeter);
-        }else {
+        } else {
             alert("mời bạn nhập lại bán kính");
         }
     }
-tinhChuVi()
+
+    tinhChuVi()
 </script>
 
 </body>
