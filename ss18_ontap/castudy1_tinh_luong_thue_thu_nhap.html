@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let thueThuNhap;
+    let luongRong;   // lương ròng
+    let tienLuong = +prompt("nhập tiền lương của bạn(VND)");
+    if (tienLuong <= 0 || tienLuong >= 1000000000) {
+        alert("mời bạn nhập lại");
+    } else if (tienLuong < 7000000) {
+        thueThuNhap = tienLuong * 0.05;
+        luongRong = tienLuong - thueThuNhap;        //lương ròng nhận được
+        alert("thuế thu nhập của bạn là:" + thueThuNhap + "(VND)");
+        alert("tiền lương chính thức của bạn là:" + luongRong + "(VND)");
+    } else if (tienLuong < 15000000) {
+        thueThuNhap = tienLuong * 0.1;
+        luongRong = tienLuong - thueThuNhap;
+        alert("thuế thu nhập của bạn là:" + thueThuNhap + "(VND)");
+        alert("tiền lương chính thức của bạn là:" + luongRong);
+    } else {
+        thueThuNhap = tienLuong * 0.2;
+        luongRong = tienLuong - thueThuNhap;
+        alert("thuế thu nhập của bạn là:" + thueThuNhap + "(VND)");
+        alert("tiền lương chính thức của bạn là:" + luongRong + "(VND)");
+    }
+
+</script>
+
+</body>
+</html>
