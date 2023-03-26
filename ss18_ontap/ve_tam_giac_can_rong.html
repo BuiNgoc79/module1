@@ -5,11 +5,12 @@
     <title>Title</title>
 </head>
 <body>
+Bài 3: Vẽ tam giác cân rỗng có chiều cao h do người dùng nhập vào. Ví dụ: h = 5
 </body>
 <script>
-    for (let j = 0; j < 10; j++) {
-        for (let i = 0; i < 10; i++) {
-            if (i === j || i === 0 || j === 9) {
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 8; j++) {
+            if ((j + i) === 3 || j === (i + 3) || i === 4) {
                 document.write("*");
             } else {
                 document.write("&nbsp&nbsp");
@@ -17,5 +18,6 @@
         }
         document.write("<br>");
     }
+
 </script>
 </html>
