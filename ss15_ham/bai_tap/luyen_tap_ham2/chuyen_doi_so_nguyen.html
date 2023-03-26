@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<script>
+    let x = +prompt("nhập số thứ nhất cần chuyển đổi");
+    let y = +prompt("nhập số thứ hai cần chuyển đổi");
+    function swapChar(x, y){
+        let arrayA=[x,y];
+        let numberB= arrayA[0];
+        arrayA[0]=arrayA[1];
+        arrayA[1]=numberB;
+        return arrayA;
+    }
+    document.write(swapChar(x,y));
+</script>
+</body>
+
+</html>

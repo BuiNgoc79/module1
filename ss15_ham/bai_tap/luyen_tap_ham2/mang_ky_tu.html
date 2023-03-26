@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let array = [1, 2, 5, 4, 3, y, 4,];
+    let checkChar = prompt("nhập vào ký tự cần kiểm tra");
+
+
+    function kiemTra(arrayA, arrayB) {
+        count = 0;
+        let flag = true;
+        for (let i = 0; i < arrayA.length; i++) {
+            if (arrayA[i] === arrayB) {
+                count++;
+                flag = false;
+            }
+        }
+        if (flag) {
+            return -1;
+        } else {
+            return count;
+        }
+    }
+    alert(kiemTra(array,checkChar));
+
+</script>
+</body>
+</html>
